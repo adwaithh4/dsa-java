@@ -77,8 +77,8 @@ static void rotatedHalfPyramid(int n) {
         }
 
         System.out.println();
+      }
     }
-}
 
     //6. Inverted Half Pyramid with Numbers
     static void invertedNumberPyramid(int n) {
@@ -87,9 +87,21 @@ static void rotatedHalfPyramid(int n) {
             System.out.print(j + " ");
         }
         System.out.println();
+     }
     }
-}
 
+    // 7. Floyd's Triangle
+    static void floydsTriangle(int n) {
+    int num = 1;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            System.out.print(num + " ");
+            num++;
+        }
+        System.out.println();
+      }
+    }
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -115,6 +127,9 @@ static void rotatedHalfPyramid(int n) {
         System.out.println("\nInverted Half Pyramid with Numbers:");
         invertedNumberPyramid(5);
 
+        System.out.println("\nFloyd's Triangle:");
+        floydsTriangle(5);
+        
         sc.close();
     }
 }
