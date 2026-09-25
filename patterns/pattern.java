@@ -62,7 +62,7 @@ public class pattern {
         }
     }
 
-    // Rotated Half Pyramid
+    // 5. Rotated Half Pyramid
 static void rotatedHalfPyramid(int n) {
     for (int i = 1; i <= n; i++) {
 
@@ -79,6 +79,17 @@ static void rotatedHalfPyramid(int n) {
         System.out.println();
     }
 }
+
+    //6. Inverted Half Pyramid with Numbers
+    static void invertedNumberPyramid(int n) {
+    for (int i = n; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            System.out.print(j + " ");
+        }
+        System.out.println();
+    }
+}
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -100,6 +111,9 @@ static void rotatedHalfPyramid(int n) {
 
         System.out.println("\nRotated Half Pyramid:");
         rotatedHalfPyramid(n);
+
+        System.out.println("\nInverted Half Pyramid with Numbers:");
+        invertedNumberPyramid(5);
 
         sc.close();
     }
