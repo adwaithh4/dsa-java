@@ -161,6 +161,24 @@ static void rotatedHalfPyramid(int n) {
         }
     }
 
+    //10. Solid Rhombus
+    static void solidRhombus(int n) {
+    for (int i = 1; i <= n; i++) {
+
+        // Print spaces
+        for (int j = 1; j <= n - i; j++) {
+            System.out.print("  ");
+        }
+
+        // Print stars
+        for (int j = 1; j <= n; j++) {
+            System.out.print("* ");
+        }
+
+        System.out.println();
+      }       
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -194,6 +212,13 @@ static void rotatedHalfPyramid(int n) {
 
         System.out.println("\nButterfly Pattern:");
         butterflyPattern(5);
+
+        System.out.println("\nSolid Rhombus:");
+        solidRhombus(5);
+
+
         sc.close();
+
+
     }
 }
