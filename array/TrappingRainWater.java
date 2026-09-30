@@ -1,3 +1,5 @@
+package array;
+
 class TrappingRainWater {
 
     static int trappedWater(int[] height) {
